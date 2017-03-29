@@ -1,0 +1,19 @@
+<% include ./partials/header %>
+
+<div class="container-fluid text-center">
+	<h1>Profile Page</h1>
+	<h2>Username: <%= currentUser.username %></h2>
+    <h3>Name: <%= currentUser.name %></h3>
+    <h3>Email: <%= currentUser.email %></h3>
+    <h3>Mobile no: <%= currentUser.mobile %></h3>
+    <h3>Course: <%= currentUser.course %></h3>
+    <h3>Branch: <%= currentUser.branch %></h3>
+    <h3>Semester: <%= currentUser.semester %></h3>
+    <br>
+    <p>
+		<a href="/profile/edit" class="btn btn-primary">Edit Profile</a>
+    </p>
+</div>
+
+
+<% include ./partials/footer %>

@@ -1,0 +1,29 @@
+<% include partials/header %>
+
+<div class="container-fluid">
+	<h1>Applications</h1>
+	<br>
+	<div class="row" style="display:flex; flex-wrap:wrap;">
+            <% applications.forEach(function(application){ %>
+                <div class="col-md-6 col-sm-12">
+                    <div class="">
+                        
+                        <div class="">
+                            <h3><strong>Type:</strong> <%= application.type %> </h3>
+                            <h3><strong>Reason:</strong> <%= application.reason %> </h3>
+                            <h3><strong>Name:</strong> <%= application.name %> </h3>
+                            <h3><strong>Father's Name:</strong> <%= application.fathername %> </h3>
+                            <h3><strong>Course:</strong> <%= application.course %> </h3>
+                            <h3><strong>Branch:</strong> <%= application.branch %> </h3>
+                            <h3><strong>Semester:</strong> <%= application.semester %> </h3>
+                            <h3><strong>Roll no:</strong> <%= application.rollno %> </h3>
+                            <h3><strong>Submitted:</strong> <%= application.submitted.toDateString() %></h3>
+
+                        </div>
+                    </div>
+                </div>
+            <% }); %>
+    </div>
+</div>
+
+<% include partials/footer %>

@@ -1,0 +1,16 @@
+.form-control {
+	width: 100%;
+}
+
+body {
+	margin-top: 60px;
+	height: 100%;
+	
+}
+
+  .navbar-default .navbar-nav>li>a {
+     font-size:20px; 
+     color:#fff; 
+ }
+
+ 

@@ -1,0 +1,93 @@
+<% include partials/header %>
+
+<div class="container-fluid">
+	<h1 class="text-center">Submit a new application to get a certificate issued</h1>
+	<br>
+
+	<form action="/application/new" method="POST" class="form-horizontal" enctype="multipart/form-data">
+		<div class="form-group">
+		  <label class="control-label col-sm-2" for="type">Certificate Type:</label>
+		  <div class="col-sm-10"> 
+			  <select name="type" class="form-control" id="type" required="true">
+			    <option>Bonafied</option>
+			    <option>Fee</option>
+			    <option>Hostel residential</option>
+			  </select>
+		  </div>
+		</div>
+	  <div class="form-group">
+	    <label class="control-label col-sm-2" for="reason">Reason:</label>
+	    <div class="col-sm-10">
+	      <input name="reason" type="text" class="form-control" id="reason" placeholder="enter the reason" required="true">
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <label class="control-label col-sm-2" for="name">Name:</label>
+	    <div class="col-sm-10">
+	      <input name="name" type="text" class="form-control" id="name" placeholder="Enter full name" required="true">
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <label class="control-label col-sm-2" for="fathername">Father's Name:</label>
+	    <div class="col-sm-10"> 
+	      <input name="fathername" type="text" class="form-control" id="fathername" placeholder="Enter father's name" required="true">
+	    </div>
+	  </div>
+	  	<div class="form-group">
+		  <label class="control-label col-sm-2" for="course">Course:</label>
+		  <div class="col-sm-10"> 
+			  <select name="course" class="form-control" id="course" required="true">
+			    <option>B. Tech</option>
+			    <option>Deploma</option>
+			    <option>Pharmacy</option>
+			    <option>BCA</option>
+			    <option>MCA</option>
+			    <option>BBA</option>
+			    <option>MBA</option>
+			  </select>
+		  </div>
+		</div>
+		<div class="form-group">
+		    <label class="control-label col-sm-2" for="branch">Branch:</label>
+		    <div class="col-sm-10">
+		      <input name="branch" type="text" class="form-control" id="branch" placeholder="Enter your branch" required="true">
+		    </div>
+		  </div>
+		<div class="form-group">
+		  <label class="control-label col-sm-2" for="semester">Semester:</label>
+		  <div class="col-sm-10"> 
+			  <select name="semester" class="form-control" id="coures" required="true">
+			    <option>1</option>
+			    <option>2</option>
+			    <option>3</option>
+			    <option>4</option>
+			    <option>5</option>
+			    <option>6</option>
+			    <option>7</option>
+			    <option>8</option>
+			  </select>
+		  </div>
+		</div>
+	  <div class="form-group">
+	    <label class="control-label col-sm-2" for="rollno">University Roll No.:</label>
+	    <div class="col-sm-10"> 
+	      <input name="rollno" type="text" class="form-control" id="rollno" placeholder="Enter University roll no." required="true">
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    
+	    	<label class="control-label col-sm-2" for="nodues">Upload no dues slip:</label>
+	    	<div class="col-sm-10"> 
+			    <input class="form-control" type="file" id="nodues" name="avatar" required="true">
+		    </div>
+		  
+	 </div>
+	  <div class="form-group"> 
+	    <div class="col-sm-offset-2 col-sm-10">
+	      <button type="submit" class="btn btn-default">Submit</button>
+	    </div>
+	  </div>
+	</form>
+</div>
+
+<% include partials/footer %>

@@ -1,0 +1,101 @@
+<% include ./partials/header %>
+
+
+<div class="container-fluid">
+    <h1>Sign Up!</h1>
+    <br>
+
+    <form action="/register" method="POST" class="form-horizontal" enctype="multipart/form-data">
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="name">Name:</label>
+            <div class="col-sm-10">
+                <input name="name" type="text" class="form-control" id="name" placeholder="Enter full name" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Email ID:</label>
+            <div class="col-sm-10"> 
+              <input name="email" type="email" class="form-control" id="email" placeholder="Enter email id" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="mobile">Mobile No:</label>
+            <div class="col-sm-10">
+                <input name="mobile" type="number" class="form-control" id="mobile" placeholder="Enter mobile no" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="username">Username:</label>
+            <div class="col-sm-10"> 
+              <input name="username" type="text" class="form-control" id="username" placeholder="Enter username" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="password">Password:</label>
+            <div class="col-sm-10"> 
+              <input name="password" type="password" class="form-control" id="password" placeholder="Enter password" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="confirm_password">Confirm Password:</label>
+            <div class="col-sm-10"> 
+              <input name="confirm_password" type="password" class="form-control" id="confirm_password" placeholder="confirm password" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="course">Course:</label>
+            <div class="col-sm-10"> 
+                  <select name="course" class="form-control" id="course" required>
+                    <option>B. Tech</option>
+                    <option>Deploma</option>
+                    <option>Pharmacy</option>
+                    <option>BCA</option>
+                    <option>MCA</option>
+                    <option>BBA</option>
+                    <option>MBA</option>
+                  </select>
+            </div>
+        </div>
+        <div class="form-group">
+                <label class="control-label col-sm-2" for="branch">Branch:</label>
+                <div class="col-sm-10">
+                  <input name="branch" type="text" class="form-control" id="branch" placeholder="Enter your branch" required>
+                </div>
+        </div>
+        <div class="form-group">
+              <label class="control-label col-sm-2" for="semester">Semester:</label>
+              <div class="col-sm-10"> 
+                  <select name="semester" class="form-control" id="semesster" required>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                  </select>
+              </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="admission_no">Admission No.:</label>
+            <div class="col-sm-10"> 
+              <input name="admission_no" type="text" class="form-control" id="admission_no" placeholder="Enter admission no." required>
+            </div>
+        </div>
+        <div class="form-group">
+                <label class="control-label col-sm-2" for="idcard">Upload ID card:</label>
+                <div class="col-sm-10"> 
+                    <input class="form-control" type="file" id="idcard" name="avatar" required>
+                </div>
+        </div>
+        
+        <div class="form-group"> 
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-default">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<% include ./partials/footer %>
